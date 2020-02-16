@@ -4,7 +4,9 @@
   "description": "Beta Theta Pi web calendar access",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "browserify index.js > bundle.js",
+    "watch": "watchify index.js -o bundle.js -e index"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
     "url": "https://github.com/strugee/beta-pnm-calendar/issues"
   },
   "homepage": "https://github.com/strugee/beta-pnm-calendar#readme",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "when-dom-ready": "^1.2.12"
+  }
 }

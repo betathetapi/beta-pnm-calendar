@@ -3,8 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Beta Theta Pi Rush calendar access</title>
+		<!-- TODO make this async defer again -->
+		<script src="https://apis.google.com/js/platform.js"></script>
+		<script src="/bundle.js" defer></script>
+		<!-- TODO use gapi.auth2.init() for this and pull from the config -->
 	</head>
 	<body>
-		
+		<button id="authorize_button" style="display: none;">Authorize</button>
+		<button id="signout_button" style="display: none;">Sign Out</button>
+
+		<pre id="content" style="white-space: pre-wrap;"></pre>
+
+		<div id="signinButton" data-onsuccess="onSignIn"></div>
+		<script async defer src="https://apis.google.com/js/api.js"
+			onload="this.onload=function(){};handleClientLoad()"
+			onreadystatechange="if (this.readyState === 'complete') this.onload()">
+		</script>
 	</body>
 </html>
