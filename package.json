@@ -1,0 +1,20 @@
+{
+  "name": "beta-pnm-calendar",
+  "version": "1.0.0",
+  "description": "Beta Theta Pi web calendar access",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strugee/beta-pnm-calendar.git"
+  },
+  "author": "AJ Jordan <alex@strugee.net>",
+  "license": "AGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/strugee/beta-pnm-calendar/issues"
+  },
+  "homepage": "https://github.com/strugee/beta-pnm-calendar#readme",
+  "private": true
+}
